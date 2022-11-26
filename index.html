@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="container">
-        <h1 class="form-title">ABV Form Tasarımı</h1>
-        <form>
+      <h1 class="form-title">ABV Form Tasarımı</h1>
+      <form>
+        <div class="form-1">
+          <fieldset class="Form-2">
+            <legend>Sozleşme Onay</legend>
+            <input type="text" name="onay" id="onay" />
+            <label for="onay"
+              >Aşşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi
+              onaylıyorum.</label
+            ><br /><br />
+            <input type="submit" value="Formu Kaydet" />
+            <input type="submit" value="Formu Temizle" />
+          </fieldset>
+        </div>
+        <div class="form-1">
+          <fieldset class="form2">
+            <legend>Kişisel Bilgiler</legend>
+            <label for="security-id" class="titles">Form Güvenlik ID</label>
+            <input type="text" disabled value="123456" /><br />
+            <label for="ad" class="titles">Ad</label>
+            <input type="text" name="ad" id="ad" /> <br />
+            <label for="soyad" class="titles">Soyad</label>
+            <input type="text" name="soyad" id="soyad" /><br />
+            <label for="yas" class="titles">Yaş</label>
+            <input type="number" id="yas" name="yas" min="18" max="59" /><br />
+            <label for="mail" class="titles">Email Adresi</label>
+            <input type="email" name="email" id="mail" /><br />
+            <label for="foto" class="titles">Fotograf Ekle</label>
+            <input type="file" id="foto" name="foto" />
+          </fieldset>
+        </div>
 
-            <div class="form-1">
-                <fieldset class="Form-2">
-                    <legend>Sozleşme Onay</legend>
-                    <input type="text" name="onay" id="onay">
-                    <label for="onay">Aşşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label><br><br>
-                    <input type="submit" value="Formu Kaydet">
-                    <input type="submit" value="Formu Temizle">
-                </fieldset>
-            </div>
-        </form>
+        <div class="form-1">
+          <fieldset class="form-2">
+            <legend>Diğer Bilgiler</legend>
+            <p><strong>Buradaki alanlar mesleki deneyimi kapsar</strong></p>
+            <label for="date" class="titles">Sektöre Giriş Tarihi</label>
+            <input type="text" id="date" name="date"/><br>
+            <label for="" class="titles">Sektor Deneyimi</label>
+            <select name="deneyim" id="deneyim">
+                <option value="1-5">1-5 Yıl</option>
+                <option value="6-10">6-10 Yıl</option>
+                <option value="11-15">11-15 Yıl</option>
+                <option value="15+">15 Üzeri Yıl</option>
+            </select><br>
+            
+          </fieldset>
+        </div>
+      </form>
     </div>
-
-
-
-
-</body>
+  </body>
 </html>
